@@ -106,8 +106,8 @@ class Submit extends \Magento\Framework\App\Action\Action
                 ->setTemplateVars(['data' => $postObject])
                 ->setFrom($sender)
                 ->addTo($emailTo)
-                //->addCc($emailCc)
-                //->addBcc($emailBcc)
+                ->addCc($emailCc)
+                ->addBcc($emailBcc)
                 ->getTransport();
             $transport->sendMessage();
             $this->inlineTranslation->resume();
