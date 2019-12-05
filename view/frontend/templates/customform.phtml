@@ -1,0 +1,36 @@
+
+<form id="contactus-form" class="form-horizontal" method="post" action="<?php echo $block->getBaseUrl()?>contactus/index/submit" data-mage-init='{"validation": {}}'>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="firstname">Firstname:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="firstname" placeholder="Enter First Name" name="firstname" data-validate='{ "required": true}'>
+        </div>
+    </div>
+    <br/>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="lastname">Lastname:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name" name="lastname" data-validate='{ "required": true}'>
+        </div>
+    </div>
+    <br/>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" data-validate='{ "required": true, "validate-email":true}'>
+        </div>
+    </div>
+    <br/>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="phone">Phone:</label>
+        <div class="col-sm-10">
+            <input type="tel" class="form-control" id="phone" placeholder="Enter Phone No" name="phone" data-validate='{ "required": true}'>
+        </div>
+    </div>
+    <br/>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" name="contact-frm" id="contact-frm" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+</form>

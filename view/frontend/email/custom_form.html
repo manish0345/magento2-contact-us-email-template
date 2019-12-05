@@ -1,0 +1,25 @@
+<!--@subject Contact Us@-->
+<!--@vars {
+"var data.comment":"Comment",
+"var data.email":"Sender Email",
+"var data.name":"Sender Name"
+} @-->
+{{template config_path="design/email/header_template"}}
+<table>
+    <tr>
+        <td>
+            <table>
+                <tr><td>First Name:</td><td>{{trans "%fname" fname=$data.firstname}}</td></tr>
+                <tr><td>Last Name: </td><td>{{trans "%lname" lname=$data.lastname}}</td></tr>
+                <tr><td>Email:</td><td>{{trans "%email" email=$data.email}}</td></tr>
+                <tr><td>Phone:</td><td>{{trans "%phone" phone=$data.phone}}</td></tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{if data.site_link}}
+<a href='{{var data.site_link}}'>My Site Link</a>
+{{/if}}
+
+{{template config_path="design/email/footer_template"}}

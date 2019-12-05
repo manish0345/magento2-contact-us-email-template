@@ -1,0 +1,8 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="content">
+            <block template="SimplifiedMagento_ContactUs::customform.phtml" class="Magento\Framework\View\Element\Template"/>
+        </referenceBlock>
+        <referenceBlock name="page.main.title" remove="true" />
+    </body>
+</page>
